@@ -1,0 +1,1 @@
+console.log(Math.ceil(6.11)) // Perceba que já apareceu um "."
