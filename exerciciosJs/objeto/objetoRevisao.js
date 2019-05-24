@@ -1,4 +1,4 @@
-// Objeto é uma coleção dinâmica de pares chave e valor
+// Objeto é uma coleção dinâmica de pares chave/valor
 
 // Primeiro exemplo
 
