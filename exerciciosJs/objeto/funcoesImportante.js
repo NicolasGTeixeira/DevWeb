@@ -4,8 +4,8 @@ const pessoa = {
     peso: 35
 }
 
-console.log(Object.keys(pessoa))
-console.log(Object.values(pessoa))
+console.log(Object.keys(pessoa)) // Ele vai pegar todas as chaves do objeto
+console.log(Object.values(pessoa)) // Ele vai pegar todos os valores do objeto
 console.log(Object.entries(pessoa))
 
 
