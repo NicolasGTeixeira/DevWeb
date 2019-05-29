@@ -6,7 +6,7 @@ const pessoa = {
 
 console.log(Object.keys(pessoa)) // Ele vai pegar todas as chaves do objeto
 console.log(Object.values(pessoa)) // Ele vai pegar todos os valores do objeto
-console.log(Object.entries(pessoa))
+console.log(Object.entries(pessoa)) // Ele mostra em sub arrays as chaves com seus respectivos valores
 
 
 Object.entries(pessoa).forEach(e => {
@@ -19,7 +19,7 @@ Object.entries(pessoa).forEach(([chave,valor]) => {
     console.log(`${chave}: ${valor}`)
 })
 
-
+// Aqui podemos definir as propriedades(Algumas caracteristicas) de um objeto
 Object.defineProperty(pessoa, 'dataNascimento', {
     enumerable: true, // Passivel a ser listada
     writable: false, // Pode ser modificada ?
@@ -30,4 +30,14 @@ pessoa.dataNascimento = '24/11/1998'
 console.log(pessoa.dataNascimento)
 console.log(Object.keys(pessoa))
 
-//  Object.assign (ECMAScript 2015)
+//  Object.assign (ECMAScript 2015) 
+/** ESTRUTURA DO ASSIGN
+ *  Object.assign(ObjDestino, Objeto1, Objeto3, ...)
+ *  ObjDestino = {ObjDestino, Objeto1, Objeto3, ...}
+ */ 
+const dest = { a: 1 }
+const o1 = { b: 2 }
+const o2 = { c: 3, a:4 }
+const obj = Object.assign(dest, o1, o2)
+
+console.log(dest)
